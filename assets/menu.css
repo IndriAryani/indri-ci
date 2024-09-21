@@ -1,0 +1,13 @@
+.menu{
+    background-color: #ddacc6;
+    height: 30px;
+    padding: 10px 10px;
+}
+.menu a{
+    background-color: #c594ae;
+    color: white;
+    padding: 5px;
+    font-size: 20px;
+    margin-left: 10px;
+    
+}
