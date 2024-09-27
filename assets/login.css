@@ -1,0 +1,10 @@
+.input [type=text]{
+     width: 35%;
+    color: white;
+    padding: 6px px;
+    border-radius: 10px;
+    margin-left: 32%;
+    border: none;
+    background-color: rgb(214, 148, 184);
+    cursor: pointer; 
+}
