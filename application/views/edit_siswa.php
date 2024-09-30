@@ -49,10 +49,9 @@
             <input placeholder="Masukkan NIS" type="hidden" name="nis" value="<?= $edit['nis'] ?>"><br><br>
             <input placeholder="Masukkan Nama" type="text" name="nama" value="<?= $edit['nama'] ?>"><br><br>
             <select name="alamat">
-                <option value="">pilih alamat</option>
-                
+                <option value="<?= $al ?>">pilih alamat</option>            
                 <?php foreach ($alamat as $al) : ?>
-                    <?php if( $al == $edit['alamat']) : ?>
+                    <?php if( $al == $edit['id_alamat']) : ?>
                     <option value="<?= $al; ?>" selected><?= $al; ?></option>
                     <?php else: ?>
                     <option value="<?= $al; ?>"><?= $al; ?></option>

@@ -18,8 +18,9 @@ class Login extends CI_Controller {
 		$user = $this->db->get_where('user',['username' => $username])->row_array();
 		
 		#proses pengecekan verifikasi
+		/*['password'] harus sama dengan yg ada didatabase*/
 		if ($user){
-			if ($password == $user['password']){
+			if (password_verify ($password, $user['password'])) {
 				$data =[
 					'username' => $user['username']
 				];
