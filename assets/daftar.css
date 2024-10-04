@@ -1,0 +1,30 @@
+.dftrv [type=text]{
+    width: 35%;
+   color: rgb(0, 0, 0);
+   padding: 6px 7px;
+   border-radius: 10px;
+   margin-left: 32%;
+   border: none;
+   background-color: rgb(245, 223, 235);
+   cursor: pointer; 
+}
+.dftrv [type=password]{
+   width: 35%;
+  color: rgb(0, 0, 0);
+  padding: 6px 7px;
+  border-radius: 10px;
+  margin-left: 32%;
+  border: none;
+  background-color: rgb(245, 223, 235);
+  cursor: pointer; 
+}
+.dftrv [type=submit]{
+   width: 30%;
+  color: rgb(0, 0, 0);
+  padding: 6px 7px;
+  border-radius: 10px;
+  margin-left: 34%;
+  border: none;
+  background-color: rgb(248, 209, 230);
+  cursor: pointer; 
+}

@@ -1,10 +1,43 @@
-.input [type=text]{
+
+.hl [type=text]{
      width: 35%;
-    color: white;
-    padding: 6px px;
+    color: rgb(0, 0, 0);
+    padding: 6px 7px;
     border-radius: 10px;
     margin-left: 32%;
     border: none;
-    background-color: rgb(214, 148, 184);
+    background-color: rgb(245, 223, 235);
     cursor: pointer; 
+}
+.hl [type=password]{
+    width: 35%;
+   color: rgb(0, 0, 0);
+   padding: 6px 7px;
+   border-radius: 10px;
+   margin-left: 32%;
+   border: none;
+   background-color: rgb(245, 223, 235);
+   cursor: pointer; 
+}
+.hl [type=submit]{
+    width: 30%;
+   color: rgb(0, 0, 0);
+   padding: 6px 7px;
+   border-radius: 10px;
+   margin-left: 34%;
+   border: none;
+   background-color: rgb(248, 209, 230);
+   cursor: pointer; 
+}
+.dftr{
+    padding: 6px 7px;
+    margin-left: 32%;
+    color: grey;
+}
+.tdftr{
+    padding: 4px 5px;
+    margin-left: 3px;
+    font-size: 15px;
+    color: rgb(133, 88, 118);
+    text-decoration: none;
 }
