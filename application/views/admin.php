@@ -25,8 +25,8 @@
             <td> <?= $ssw['nama'] ?> </td>
             <td> <?= $ssw['alamat'] ?> </td>
             <td> <?= $ssw['no_telp'] ?> </td>
-            <td> <a href="<?= base_url(); ?>admin/edit/<?= $ssw['nis']?>">edit</a> </td>
-            <td> <a onclick="return confirm('Are u sure want to delete this?')" href="<?= base_url(); ?>admin/hapus/<?= $ssw['nis']?>">hapus</a> </td>
+            <td class="t-edit"> <a href="<?= base_url(); ?>admin/edit/<?= $ssw['nis']?>">edit</a> </td>
+            <td class="t-hapus"> <a onclick="return confirm('Are u sure want to delete this?')" href="<?= base_url(); ?>admin/hapus/<?= $ssw['nis']?>">hapus</a> </td>
         </tr>
         <?php endforeach; ?>
     </table>
