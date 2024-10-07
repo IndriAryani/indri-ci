@@ -25,7 +25,8 @@
             <td> <?= $al['kode_pos'] ?> </td>
 
             <td class="t-edit"> <a href="<?= base_url(); ?>alamat/edit/<?= $al['id']?>">edit</a> </td>
-            <td class="t-hapus"> <a onclick="return confirm('Are u sure want to delete this?')" href="<?= base_url(); ?>alamat/hapus/<?= $al['id']?>">hapus</a> </td>
+            <td class="t-hapus"> <a onclick="return confirm('Are u sure want to delete this?')" 
+            href="<?= base_url(); ?>alamat/hapus/<?= $al['id']?>">hapus</a> </td>
         </tr>
         <?php endforeach; ?>
     </table>

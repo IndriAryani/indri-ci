@@ -26,7 +26,7 @@ class Admin extends CI_Controller {
 		//memanggil siswa model
 		$this->load->model('siswa_model');
 		$data['edit'] = $this->siswa_model->getSiswaByNis($nis);
-		$data['alamat'] = [1, 2, 3, 4];
+		$data['alamat'] = $this->db->get('alamat')->result_array(); //sama spt select * from
 
 		$this->load->view('templete/header');
 		$this->load->view('edit_siswa', $data);

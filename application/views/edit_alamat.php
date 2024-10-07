@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Edit Data Siswa</title>
+    <title>Edit Data Alamat</title>
 </head>
 <style>
     h1{
@@ -42,21 +42,14 @@
 }
 </style>
 <body>
-    <h1>EDIT DATA SISWA</h1>
+    <h1>EDIT DATA ALAMAT</h1>
     <div class="tambah">
-        <form action="<?= base_url()?>admin/update" method="post">
+        <form action="<?= base_url()?>alamat/update" method="post">
             
-            <input type="hidden" name="nis" value="<?= $edit['nis'] ?>"><br><br>
-            <input placeholder="Masukkan Nama" type="text" name="nama" value="<?= $edit['nama'] ?>"><br><br>
-            <select name="alamat_siswa">
-                <option>pilih alamat</option>
-
-                <?php foreach($alamat as $al) :?>
-                    <option value="<?= $al['id']?>"><?= $al['alamat']?></option>
-                <?php endforeach; ?>
-                
-            </select><br><br>
-            <input placeholder="Masukkan No.Telp" type="text" name="no_telp" value="<?= $edit['no_telp'] ?>"><br><br>
+            <input type="hidden" name="id" value="<?= $edit['id'] ?>"><br><br>
+            <input placeholder="Alamat" type="text" name="alamat" value="<?= $edit['alamat'] ?>"><br><br>
+            
+            <input placeholder="Kode Pos" type="text" name="kode_pos" value="<?= $edit['kode_pos'] ?>"><br><br>
 
             <input type="submit" value="Edit">
         </form>

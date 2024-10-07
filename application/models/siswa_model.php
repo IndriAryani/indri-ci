@@ -7,7 +7,7 @@ class siswa_model extends CI_Model {
 	{
         $this->db->select('*'); 
         $this->db->from('siswa'); 
-        $this->db->join('alamat', 'alamat.id = siswa.alamat_id'); 
+        $this->db->join('alamat', 'alamat.id = siswa.id_alamat'); 
         return $this->db->get()->result_array(); 
 	}
 	public function tambahSiswa()
@@ -15,7 +15,7 @@ class siswa_model extends CI_Model {
 		$data=
 		[
 			"nama" => $this->input->post('nama', true),
-			"alamat_id" => $this->input->post('alamat', true),
+			"id_alamat" => $this->input->post('alamat', true),
 			"no_telp" => $this->input->post('no_telp', true)
 		];
 		
